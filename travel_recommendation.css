@@ -1,0 +1,573 @@
+
+body{
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif !important; */
+
+    background-image: url('./images/travelbloom_maincity.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+body, html {
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow-x: hidden;
+}
+
+body {
+    padding-top: 200px; /* Adjust this value based on your navbar height */
+}
+
+/* universal selector */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-fluid {
+    padding: 0;
+    margin: 0;
+    width: 100vw; /* Ensures full width of the viewport */
+}
+
+.container {
+    padding: 0;
+    max-width: 100%;
+
+}
+
+#homeTheme {
+    padding-left: 0;
+    padding-top: 40px;
+    color: white;
+    display: flex;
+}
+
+#homeText {
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+h1 {
+    font-size: 90px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
+    letter-spacing: 5px;
+}
+
+#homeTheme p {
+    width: 80%;
+}
+
+
+#bgCl, #aBgCl {
+    background-color: rgba(5, 81, 72, 0.727) ;
+    height: 100vh;
+    width: 90vw;
+    position: fixed;
+    mask-image: linear-gradient(to right, black 30%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to right, black 30%, transparent 100%);
+    color: white;
+    padding-top: 140px;
+    padding-left: 140px;
+    z-index: -1;
+
+}
+
+
+#abUs {
+    height: auto;
+    width: 90vw;
+    color: white;
+    padding-top: 40px;
+    padding-left: 0px;
+    display: flex;
+}
+
+#ctUs {
+    height: auto;
+    width: 90vw;
+    color: white;
+    padding-top: 40px;
+    padding-left: 0px;
+    display: flex;
+}
+
+#aliSc {
+    margin-left: 2px;
+    margin-right: 100px;
+}
+
+#line {
+    border: solid 1px rgba(255, 255, 255, 0.577);
+    width: 0.3px;
+    height: 230px;
+    margin-left: 35px;
+}
+
+#aulHac {
+    margin-right: 447px;
+}
+
+h2 {
+    font-size: 60px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h3 {
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#bgCl p {
+    margin-top: 40px;
+    width: 45%;
+    line-height: 1.8;
+}
+
+#abUs p {
+    margin-top: 40px;
+    line-height: 1.8;
+    background-color: rgba(10, 32, 27, 0.546);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+
+#ourTeam {
+    display: flex;
+    margin-top: 100px;
+}
+
+/* #ourTeam h3 {
+
+} */
+
+#ourTeam img {
+    width: 7em;
+}
+
+.ourTeam {
+    margin-left: 5%;
+    border-radius: 7px;
+    background-color: rgba(10, 32, 27, 0.546);
+    padding: 20px;
+    font-weight: 50;
+    display: flex;
+
+}
+
+.tm {
+    margin-top: 40px;
+}
+
+.desig {
+    background-color: rgb(11, 109, 67);
+    padding: 2px;
+    padding-left: 45px;
+    padding-right: 45px;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 600 !important;
+    color: white;
+    border: none;
+
+}
+
+#dots {
+    width: 170px;
+    opacity: 60%;
+    margin-left: 700px;
+    margin-top: 200px;
+    position: absolute;
+}
+
+#adots img {
+    width: 170px;
+    opacity: 20%;
+    margin-left: 450px;
+    margin-top: -530px;
+    position: absolute;
+}
+
+#cdots img {
+    width: 170px;
+    opacity: 20%;
+    margin-left: 450px;
+    margin-top: -670px;
+    position: absolute;
+}
+
+.row {
+    padding: 0;
+    margin: 0;
+}
+
+
+nav {
+    display: flex;
+    margin: 0 auto;
+    padding: 15px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(31, 56, 58, 0.97);
+
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+}
+
+#homeTheme, #abUs, #ctUs {
+    margin-top: 120px;
+}
+
+
+nav ul {
+    list-style: none;
+    display: inherit;
+    padding: 0;
+    margin: 0;
+
+}
+
+
+nav ul li {
+    margin-right:5px;
+    margin-top: 0px;
+    margin-left: 5px;
+
+}
+
+nav a {
+    text-decoration: none !important;
+    color: rgb(214, 210, 210) !important;
+    /* font-family: Arial, Helvetica, sans-serif; */
+}
+
+nav #ulHac li:hover, #aulHac li:hover {
+    text-decoration: underline 2px !important;
+    text-underline-offset: 9px;
+    color: rgb(221, 70, 32) !important;
+}
+
+nav #ulSearch {
+    background-color: rgb(253, 253, 253);
+    padding: 6px;
+    border-radius: 30px;
+    /* margin-left: 50px; */
+    margin-bottom: 0px;
+    margin-right: 20px;
+}
+
+nav #ulSearch li:nth-child(1) {
+    margin-right: 40px;
+}
+
+
+nav input, input::placeholder{
+    /* background-color: white; */
+    border: none;
+    color: rgb(21, 75, 81);
+    outline: none;
+    width: 200px;
+    font-size: 13px;
+
+
+}
+
+#btnSearch, #btnClear {
+    background-color: rgb(21, 75, 81);
+    color: white;
+    font-size: 10px;
+    padding:3px 9px 3px 9px;
+    border-radius: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+    border: none;
+}
+
+#bookNow {
+    background-color: rgb(218, 66, 24);
+    font-size: 15px;
+    font-weight: 600;
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-radius: 4px;
+    margin-top: 55px;
+    cursor: pointer;
+    border: none;
+    color: white;
+
+}
+
+#bookNow a {
+    color: white;
+    text-decoration: none;
+
+}
+
+
+
+#socials {
+    margin-top: 70px;
+    margin-left: -10px;
+}
+
+#socials ul li {
+    list-style: none;
+}
+
+.scImg {
+    width: 25px;
+    margin-top: 25px;
+}
+
+#contactCnt {
+    display: inherit;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#fm {
+    width: 780px;
+    height: 520px;
+    background-color: rgba(10, 32, 27, 0.546);
+    border-radius: 10px;
+    padding: 20px;
+    margin-left: 190px;
+    margin-top: 200px;
+    margin-bottom: 50px;
+}
+
+#contactBtn {
+    width: 100%;
+}
+
+#contactH2 {
+    font-size: 80px;
+}
+
+.form-control, .form-control:focus {
+    background-color: rgba(255, 255, 255, 0.04);
+    color: white;
+}
+
+.form-control::placeholder {
+    color: rgba(255, 255, 255, 0.323);
+}
+
+.form-control:-webkit-autofill {
+    background-color: #ffffff !important; /*Override default autofill background*/
+    color: #ffffff; /* Set text color if needed */
+    -webkit-text-fill-color: #ffffff; /* Ensures text color remains consistent */
+    transition: background-color 5000s ease-in-out 0s; /* Keeps autofill background color after focus */
+}
+/* CSS for search result display */
+
+#result {
+    background-color: rgba(10, 32, 27, 0.428);
+    margin: 0 auto;
+    width: 85%;
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.cityImg {
+    width: 70%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    box-shadow: 7px 7px 9px rgb(0, 0, 0, 0.4);
+}
+
+
+@media (max-width: 1260px) {
+
+    /* #contact {
+        display: block;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+    } */
+
+    #homeTheme p {
+        width: 130%;
+    }
+
+    #aulHac {
+        margin-right: 4px;
+    }
+
+    nav {
+        display: flex;
+        margin: 0 auto;
+        padding: 10px;
+        align-items: center;
+        justify-content: space-between;
+        background-color: rgb(31, 56, 58);
+        width: 100%;
+        position: fixed;
+        top: 0; /* Sticky position at the top */
+        left: 0;
+        z-index: 1000; /* Ensure it stays above other elements */
+
+
+    }
+
+    .container-fluid {
+        width: 100%; /* Ensure container spans the full width */
+    }
+
+
+    nav ul li {
+        margin: 0 23px;
+
+    }
+
+    #homeText {
+        margin-left: 20px;
+        margin-top: 50px;
+    }
+    #bgCl, #aBgCl {
+        width: 100%;
+        padding-left: 20px;
+        padding-top: 80px;
+    }
+    /* Adjust other styles as needed */
+    h1 {
+        font-size: 390%;
+    }
+
+    h2 {
+        font-size: 60px;
+    }
+
+    h3 {
+        font-size: 30px;
+    }
+
+    #homeText {
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+
+    #abUs, #bgCl, #aBgCl {
+        width: 100%;
+        padding-left: 10px;
+        padding-top: 20px;
+    }
+
+    /* #ctUs {
+        width: 100%;
+        padding-left: 10px;
+        padding-top: 20px;
+    } */
+
+    #ourTeam {
+        display: block;
+        margin-top: 100px;
+        width: 100%;
+    }
+    .ourTeam {
+        margin-left: 2%;
+        border-radius: 7px;
+        background-color: rgba(10, 32, 27, 0.546);
+        padding: 20px;
+        font-weight: 50;
+        display: flex;
+        margin-top: 3%;
+        width: 50%;
+    }
+
+    #aboutSec {
+        width: 70%;
+    }
+
+    #ourTeam img {
+        width: 6em;
+    }
+
+    .desig {
+        padding-left: 45px !important;
+        padding-right: 45px !important;
+    }
+
+    #contactCnt {
+        display: block;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #fm {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 10%;
+    }
+
+    #contactH2 {
+        font-size: 4em;
+    }
+
+
+}
+
+@media (max-width: 1300px) {
+    .desig {
+
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+}
+
+@media (max-width: 1430px) {
+
+    #contactCnt {
+        display: block;
+        width: 60%;
+    }
+
+    #fm {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 10%;
+    }
+
+    #bookNow {
+        margin-bottom: 20%;
+    }
+
+    #aboutSec {
+        margin-bottom: 4%;
+    }
+
+    .cityImg {
+        width: 50%;
+
+    }
+
+    .desig {
+
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #cdots img {
+        margin-left: 750px;
+        margin-top: -800px;
+        position: fixed;
+
+
+    }
+}
