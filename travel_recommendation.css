@@ -1,3 +1,12 @@
+:root {
+    --primary-color: rgba(5, 81, 72, 0.727);
+    --secondary-color: rgba(10, 32, 27, 0.546);
+    --highlight-color: rgb(218, 66, 24);
+    --text-color: white;
+}
+
+
+
 
 body{
     /* font-family: Verdana, Geneva, Tahoma, sans-serif !important; */
@@ -29,7 +38,7 @@ body {
 .container-fluid {
     padding: 0;
     margin: 0;
-    width: 100vw; /* Ensures full width of the viewport */
+    max-width: 100%; /* Ensures full width of the viewport */
 }
 
 .container {
@@ -41,13 +50,16 @@ body {
 #homeTheme {
     padding-left: 0;
     padding-top: 40px;
-    color: white;
+    color: var(--text-color);
     display: flex;
+    z-index: 100;
+    position: absolute;
 }
 
 #homeText {
     margin-left: 5%;
     margin-top: 5%;
+
 }
 
 h1 {
@@ -58,41 +70,42 @@ h1 {
 }
 
 #homeTheme p {
-    width: 80%;
+    width: 50%;
+
 }
 
 
 #bgCl, #aBgCl {
-    background-color: rgba(5, 81, 72, 0.727) ;
-    height: 100vh;
-    width: 90vw;
+    background-color: var(--primary-color);
+    height: 100%;
+    max-width: 90%; /* Use max-width for better responsiveness */
     position: fixed;
     mask-image: linear-gradient(to right, black 30%, transparent 100%);
     -webkit-mask-image: linear-gradient(to right, black 30%, transparent 100%);
-    color: white;
-    padding-top: 140px;
-    padding-left: 140px;
+    color: var(--text-color);
+    padding: 140px;
     z-index: -1;
-
 }
 
 
 #abUs {
     height: auto;
     width: 90vw;
-    color: white;
+    color: var(--text-color);
     padding-top: 40px;
     padding-left: 0px;
     display: flex;
+    z-index: 100;
 }
 
 #ctUs {
     height: auto;
     width: 90vw;
-    color: white;
+    color: var(--text-color);
     padding-top: 40px;
     padding-left: 0px;
     display: flex;
+    z-index: 100;
 }
 
 #aliSc {
@@ -176,12 +189,17 @@ h3 {
 
 }
 
+#ourTeam button {
+    cursor: none;
+}
+
 #dots {
-    width: 170px;
+    width: 13%;
     opacity: 60%;
-    margin-left: 700px;
-    margin-top: 200px;
+    left: 35%;
+    top: 10%;
     position: absolute;
+    z-index: 100;
 }
 
 #adots img {
@@ -190,6 +208,7 @@ h3 {
     margin-left: 450px;
     margin-top: -530px;
     position: absolute;
+    z-index: 100;
 }
 
 #cdots img {
@@ -203,6 +222,7 @@ h3 {
 .row {
     padding: 0;
     margin: 0;
+    max-width: 100%;
 }
 
 
@@ -212,15 +232,16 @@ nav {
     padding: 15px;
     align-items: center;
     justify-content: space-between;
-    background-color: rgb(31, 56, 58, 0.97);
+    background-color: var(--secondary-color);
 
     width: 100%;
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1000;
+    z-index: 1000; /* Navbar should always be on top */
 
 }
+
 
 #homeTheme, #abUs, #ctUs {
     margin-top: 120px;
@@ -256,7 +277,7 @@ nav #ulHac li:hover, #aulHac li:hover {
 }
 
 nav #ulSearch {
-    background-color: rgb(253, 253, 253);
+    background-color:var(--text-color);
     padding: 6px;
     border-radius: 30px;
     /* margin-left: 50px; */
@@ -282,13 +303,17 @@ nav input, input::placeholder{
 
 #btnSearch, #btnClear {
     background-color: rgb(21, 75, 81);
-    color: white;
+    color: var(--text-color);
     font-size: 10px;
     padding:3px 9px 3px 9px;
     border-radius: 5px;
-    margin-left: 5px;
+
     cursor: pointer;
     border: none;
+}
+
+#btnSearch {
+    margin-right: -19px;
 }
 
 #bookNow {
@@ -303,12 +328,12 @@ nav input, input::placeholder{
     margin-top: 55px;
     cursor: pointer;
     border: none;
-    color: white;
+    color: var(--text-color);
 
 }
 
 #bookNow a {
-    color: white;
+    color: var(--text-color);
     text-decoration: none;
 
 }
@@ -358,7 +383,7 @@ nav input, input::placeholder{
 
 .form-control, .form-control:focus {
     background-color: rgba(255, 255, 255, 0.04);
-    color: white;
+    color: var(--text-color);
 }
 
 .form-control::placeholder {
@@ -377,7 +402,7 @@ nav input, input::placeholder{
     background-color: rgba(10, 32, 27, 0.428);
     margin: 0 auto;
     width: 85%;
-    color: white;
+    color: var(--text-color);
     padding: 30px;
     border-radius: 10px;
 }
@@ -391,61 +416,60 @@ nav input, input::placeholder{
 }
 
 
-@media (max-width: 1260px) {
+@media screen and (max-width: 1260px) {
 
-    /* #contact {
-        display: block;
-        margin: 0 auto;
-        align-items: center;
-        justify-content: center;
+    /* .row {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    } */
+
+    /* .container {
+
+        width: 100%;
+
     } */
 
     #homeTheme p {
-        width: 130%;
+        width: 90%;
+
+    }
+
+    #dots {
+        width: 25%;
+        opacity: 60%;
+        left: 70%;
+        top: 6%;
+        position: absolute;
+        z-index: 100;
     }
 
     #aulHac {
         margin-right: 4px;
     }
 
-    nav {
-        display: flex;
-        margin: 0 auto;
-        padding: 10px;
-        align-items: center;
-        justify-content: space-between;
-        background-color: rgb(31, 56, 58);
-        width: 100%;
-        position: fixed;
-        top: 0; /* Sticky position at the top */
-        left: 0;
-        z-index: 1000; /* Ensure it stays above other elements */
-
-
-    }
-
-    .container-fluid {
-        width: 100%; /* Ensure container spans the full width */
+    nav #ulSearch {
+        margin-right: 0px;
     }
 
 
-    nav ul li {
-        margin: 0 23px;
 
+    nav #ulSearch li:nth-child(1) {
+        margin-right: -10px;
     }
 
-    #homeText {
-        margin-left: 20px;
-        margin-top: 50px;
-    }
+
     #bgCl, #aBgCl {
         width: 100%;
-        padding-left: 20px;
-        padding-top: 80px;
+        height: 100%;
+        padding-left: 20%;
+        padding-top: 80%;
     }
     /* Adjust other styles as needed */
     h1 {
-        font-size: 390%;
+        font-size: 2.5rem;
+        letter-spacing: normal;
+
     }
 
     h2 {
@@ -457,21 +481,15 @@ nav input, input::placeholder{
     }
 
     #homeText {
-        margin-left: 20px;
-        margin-top: 20px;
+        left: 10%;
+        top: 20%;
     }
 
     #abUs, #bgCl, #aBgCl {
-        width: 100%;
+        /* width: 100%; */
         padding-left: 10px;
         padding-top: 20px;
     }
-
-    /* #ctUs {
-        width: 100%;
-        padding-left: 10px;
-        padding-top: 20px;
-    } */
 
     #ourTeam {
         display: block;
