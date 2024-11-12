@@ -47,12 +47,16 @@ body {
 
 }
 
+.row {
+    bottom: 50%;
+}
+
 #homeTheme {
     padding-left: 0;
     padding-top: 40px;
     color: var(--text-color);
     display: flex;
-    z-index: 100;
+    z-index: 1;
     position: absolute;
 }
 
@@ -189,10 +193,6 @@ h3 {
 
 }
 
-#ourTeam button {
-    cursor: none;
-}
-
 #dots {
     width: 13%;
     opacity: 60%;
@@ -233,7 +233,6 @@ nav {
     align-items: center;
     justify-content: space-between;
     background-color: var(--secondary-color);
-
     width: 100%;
     position: fixed;
     top: 0;
@@ -307,7 +306,6 @@ nav input, input::placeholder{
     font-size: 10px;
     padding:3px 9px 3px 9px;
     border-radius: 5px;
-
     cursor: pointer;
     border: none;
 }
@@ -405,6 +403,7 @@ nav input, input::placeholder{
     color: var(--text-color);
     padding: 30px;
     border-radius: 10px;
+    margin-top: 40%;
 }
 
 .cityImg {
