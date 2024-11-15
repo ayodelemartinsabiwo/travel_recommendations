@@ -1,6 +1,6 @@
 :root {
     --primary-color: rgba(5, 81, 72, 0.727);
-    --secondary-color: rgba(10, 32, 27, 0.546);
+    --secondary-color: rgba(23, 46, 36, 0.967);
     --highlight-color: rgb(218, 66, 24);
     --text-color: white;
 }
@@ -103,16 +103,18 @@ h1 {
 }
 
 #ctUs {
-    height: auto;
-    width: 90vw;
+    /* height: auto; */
+    /* width: 90vw; */
     color: var(--text-color);
     padding-top: 40px;
     padding-left: 0px;
     display: flex;
+    /* flex-flow: wrap; */
+    flex-direction: row;
     z-index: 100;
 }
 
-#aliSc {
+#aliSc, #cliSc {
     margin-left: 2px;
     margin-right: 100px;
 }
@@ -214,9 +216,9 @@ h3 {
 #cdots img {
     width: 170px;
     opacity: 20%;
-    margin-left: 450px;
-    margin-top: -670px;
-    position: absolute;
+    margin-left: 50%;
+    margin-top: -80%;
+    /* position: absolute; */
 }
 
 .row {
@@ -352,23 +354,26 @@ nav input, input::placeholder{
     margin-top: 25px;
 }
 
+
 #contactCnt {
-    display: inherit;
-    margin: 0 auto;
+    /* display: flex; */
+    /* margin: 0 auto; */
     align-items: center;
     justify-content: center;
+    margin-left: 25%;
+    left: 0;
 
 }
 
 #fm {
-    width: 780px;
-    height: 520px;
+    width: 7in;
+    /* height: 60%; */
     background-color: rgba(10, 32, 27, 0.546);
     border-radius: 10px;
     padding: 20px;
-    margin-left: 190px;
-    margin-top: 200px;
-    margin-bottom: 50px;
+    /* margin-left: 190px; */
+    margin-top: 100px;
+    margin-bottom: 30px;
 }
 
 #contactBtn {
@@ -415,6 +420,8 @@ nav input, input::placeholder{
 }
 
 
+
+
 @media screen and (max-width: 1260px) {
 
     /* .row {
@@ -427,11 +434,47 @@ nav input, input::placeholder{
 
         width: 100%;
 
+    }*/
+
+    #result {
+        margin-top: 137%;
+        margin-left: 15%;
+        padding: 10px;
+        width: 83%;
+    }
+
+    .cityImg {
+        width: 250px !important;
+    }
+
+    nav a img {
+        margin-top: -7px;
+        margin-bottom: 9px;
+        width: 30% !important;
+    }
+
+
+
+    /* nav {
+        justify-content: ;
     } */
+
+    #ulSearch {
+        display: flex;
+        margin-top: 15px;
+    }
+
+    #adots {
+        margin-top: -290%;
+        margin-left: -60%;
+    }
 
     #homeTheme p {
         width: 90%;
+    }
 
+    #homeTheme {
+        margin-top: 150px;
     }
 
     #dots {
@@ -445,12 +488,26 @@ nav input, input::placeholder{
 
     #aulHac {
         margin-right: 4px;
+        display: flex;
     }
 
     nav #ulSearch {
         margin-right: 0px;
     }
 
+    /* nav ul {
+        display: block;
+    } */
+
+    .indexMenu {
+        /* font-size: 10px; */
+        clear:both;
+        display: flex;
+    }
+
+    nav {
+        display: block;
+    }
 
 
     nav #ulSearch li:nth-child(1) {
@@ -464,7 +521,8 @@ nav input, input::placeholder{
         padding-left: 20%;
         padding-top: 80%;
     }
-    /* Adjust other styles as needed */
+
+    /* Adjust other styles as needed*/
     h1 {
         font-size: 2.5rem;
         letter-spacing: normal;
@@ -485,7 +543,7 @@ nav input, input::placeholder{
     }
 
     #abUs, #bgCl, #aBgCl {
-        /* width: 100%; */
+
         padding-left: 10px;
         padding-top: 20px;
     }
@@ -496,34 +554,33 @@ nav input, input::placeholder{
         width: 100%;
     }
     .ourTeam {
-        margin-left: 2%;
-        border-radius: 7px;
-        background-color: rgba(10, 32, 27, 0.546);
         padding: 20px;
         font-weight: 50;
-        display: flex;
         margin-top: 3%;
-        width: 50%;
     }
 
-    #aboutSec {
-        width: 70%;
+
+    #aliSc {
+        margin-right: 25px;
+        margin-left: -10px;
     }
+
+
 
     #ourTeam img {
         width: 6em;
     }
 
     .desig {
-        padding-left: 45px !important;
-        padding-right: 45px !important;
+        padding-left: 25px !important;
+        padding-right: 25px !important;
     }
 
+
     #contactCnt {
-        display: block;
-        margin: 0 auto;
-        align-items: center;
-        justify-content: center;
+
+        width: 100%;
+        margin-left: -76px;
     }
 
     #fm {
@@ -533,7 +590,12 @@ nav input, input::placeholder{
     }
 
     #contactH2 {
-        font-size: 4em;
+        font-size: 3em;
+    }
+
+    #ctUs {
+        margin-top: 100px;
+        margin-left: -2px;
     }
 
 
@@ -550,10 +612,8 @@ nav input, input::placeholder{
 
 @media (max-width: 1430px) {
 
-    #contactCnt {
-        display: block;
-        width: 60%;
-    }
+
+
 
     #fm {
         width: 100%;
